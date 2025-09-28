@@ -1,0 +1,9 @@
+[submodule "vin-decode-mcp"]
+	path = vin-decode-mcp
+	url = https://github.com/javarool/vin-decode-mcp.git
+[submodule "pdf-template-editor"]
+	path = pdf-template-editor
+	url = https://github.com/javarool/pdf-template-editor.git
+[submodule "mcp-telegram-bot"]
+	path = mcp-telegram-bot
+	url = https://github.com/javarool/mcp-telegram-bot.git
