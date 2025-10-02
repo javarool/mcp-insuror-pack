@@ -1,0 +1,22 @@
+{
+  "name": "fmcsa-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for FMCSA company queries",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "cheerio-tableparser": "^1.0.1",
+    "fastmcp": "^1.0.0",
+    "zod": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
