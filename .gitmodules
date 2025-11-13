@@ -7,3 +7,6 @@
 [submodule "mcp-telegram-bot"]
 	path = mcp-telegram-bot
 	url = https://github.com/javarool/mcp-telegram-bot.git
+[submodule "crud-mcp"]
+	path = crud-mcp
+	url = https://github.com/javarool/crud-mcp.git
