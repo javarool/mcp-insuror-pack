@@ -140,6 +140,11 @@ if [ -d "fmcsa-parser" ]; then
     echo ""
 fi
 
+if [ -d "crud-mcp" ]; then
+    install_npm_deps "crud-mcp"
+    echo ""
+fi
+
 # Initialize Python projects
 echo "Initializing Python MCP servers..."
 echo "--------------------------------------"
