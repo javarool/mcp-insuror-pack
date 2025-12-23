@@ -53,14 +53,16 @@ echo ""
 install_npm_deps() {
     local dir="$1"
     echo "Installing npm dependencies in $dir..."
-    cd "$dir"
-    if [ -f "package.json" ]; then
-        npm install
-        echo "npm dependencies installed in $dir"
-    else
+
+    if [ ! -f "$dir/package.json" ]; then
         echo "No package.json found in $dir"
+        return 1
     fi
-    cd - > /dev/null
+
+    pushd "$dir" > /dev/null || return 1
+    npm ci || { echo "npm ci failed in $dir"; popd > /dev/null; return 1; }
+    echo "npm dependencies installed in $dir"
+    popd > /dev/null
 }
 
 # Function to install Python dependencies
